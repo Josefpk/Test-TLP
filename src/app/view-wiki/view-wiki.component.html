@@ -1,0 +1,213 @@
+<div class="header">
+  <div class="header-text">
+    <h1>WikipediA</h1>
+    <Span>The Free Encyclopedia</Span>
+    <img src="https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2.png" alt="">
+  </div>
+  
+  <div class="section-lang">
+    <div class="width-div lang1">
+      <a href="http://" target="_blank"> <strong>English</strong></a>
+      <small>6 326 000 + articles</small>
+    </div>
+    <div class="width-div lang2">
+      <a href="http://" target="_blank"><strong>中國人</strong></a>
+      <small>6 326 000 + 記事</small>
+    </div>
+    <div class="width-div lang3">
+      <a href="http://" target="_blank"><strong>Español</strong></a>
+      <small>6 326 000 + artículos</small>
+    </div>
+    <div class="width-div lang4">
+      <a href="http://" target="_blank"><strong>Deutsch</strong></a>
+      <small>6 326 000 + Artikel</small>
+    </div>
+    <div class="width-div lang5">
+      <a href="http://" target="_blank"><strong>Русский</strong></a>
+      <small>6 326 000 + статей</small>
+    </div>
+    <div class="width-div lang6">
+      <a href="http://" target="_blank"><strong>Français</strong></a>
+      <small>6 326 000 + articles</small>
+    </div>
+    <div class="width-div lang7">
+      <a href="http://" target="_blank"><strong>中文</strong></a>
+      <small>6 326 000 + 條目</small>
+    </div>
+    <div class="width-div lang8">
+      <a href="http://" target="_blank"><strong>Italiano</strong></a>
+      <small>6 326 000 + voci</small>
+    </div>
+    <div class="width-div lang9">
+      <a href="http://" target="_blank"><strong>Português</strong></a>
+      <small>6 326 000 + artigos</small>
+    </div>
+    <div class="width-div lang10">
+      <a href="http://" target="_blank"><strong>Polski</strong></a>
+      <small>6 326 000 + haseł</small>
+    </div>
+  </div>
+
+  <div class="section-search-all">
+    <div class="section-search">
+      <mat-form-field>
+        <input type="search" matInput>
+        <mat-select [(value)]="selected">
+          <mat-option *ngFor="let lang of languages" [value]="lang.value">
+            {{lang.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <p>{{selected}}</p>
+    </div>
+    <button>
+      <mat-icon class="mat-18">search</mat-icon>
+    </button>
+  </div>
+
+  <div class="button-language">
+    <hr/>
+    <button (click)="pageInConstruction()">
+      <mat-icon class="material-icons">
+        translate
+        </mat-icon>
+      Read Wikipedia in your language
+      <mat-icon class="material-icons">
+        keyboard_arrow_down
+        </mat-icon>
+    </button>
+    <hr/>
+  </div>
+</div>
+
+<div class="section-options">
+  <div class="contain-info">
+    <div class="cards-info">
+      <img src="../assets/descarga.png">
+      <div>
+        <span>Wikipedia is hosted by the Wikimedia FOundation, a non-profit organization that also hosts a range of
+          other projects.</span>
+        <p>You can support our work with a donation</p>
+      </div>
+    </div>
+    <div class="cards-info">
+      <img src="../assets/logoW.png">
+      <div>
+        <p>Download Wikipedia for Android or IOS</p>
+        <span>Save your favorite articles to read offline, sync your reading list across devices and customize your
+          readin experience with the oficial Wikipedia app.</span>
+        <img id="download" src="../assets/download.png">
+
+      </div>
+    </div>
+  </div>
+
+  <div class="redirection">
+    <div class="groupsCards">
+      <div class="contain" id="margin-first">
+        <div class="cards">
+          <img src="../assets/wikicomon.JPG">
+          <div>
+            <p>Commons</p>
+            <span>Freely usable photos & more</span>
+          </div>
+        </div>
+        <div class="cards">
+          <img src="../assets/wikiviaje.JPG">
+          <div>
+            <p>Wikivoyage</p>
+            <span>Free travel guide</span>
+          </div>
+        </div>
+        <div class="cards">
+          <img src="../assets/wiktionary.JPG">
+          <div>
+            <p>Wiktionary</p>
+            <span>Free dictionary</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contain">
+        <div class="cards">
+          <img src="../assets/wikiLibros.JPG">
+          <div>
+            <p>Wikibooks</p>
+            <span>Free textbooks</span>
+          </div>
+        </div>
+        <div class="cards">
+          <img src="../assets/wikinoticias.JPG">
+          <div>
+            <p>Wikinews</p>
+            <span>Free news source</span>
+          </div>
+        </div>
+        <div class="cards">
+          <img src="../assets/wikidata.JPG">
+          <div>
+            <p>Wikidata</p>
+            <span>Free knowledge base</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="groupsCards">
+      <div class="contain">
+        <div class="cards">
+          <img src="../assets/wikiversidad.JPG">
+          <div>
+            <p>Wikiversity</p>
+            <span>Free course materials</span>
+          </div>
+        </div>
+        <div class="cards">
+          <img src="../assets/wikiquote.JPG">
+          <div>
+            <p>Wikiquote</p>
+            <span>Free quote compendium</span>
+          </div>
+        </div>
+        <div class="cards">
+          <img src="../assets/mediawiki.JPG">
+          <div>
+            <p>MediaWiki</p>
+            <span>Free & open wiki application</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contain">
+        <div class="cards">
+          <img src="../assets/wikisource.JPG">
+          <div>
+            <p>Wikisource</p>
+            <span>Free library</span>
+          </div>
+        </div>
+
+        <div class="cards">
+          <img src="../assets/wikispecies.JPG">
+          <div>
+            <p>Wikispecies</p>
+            <span>Free species directory</span>
+          </div>
+        </div>
+        <div class="cards">
+          <img src="../assets/metawiki.JPG">
+          <div>
+            <p>Meta-Wiki</p>
+            <span>Community coordination & documentation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="footer">
+<p>This page is available under the <span>Creative Commons Attribution-ShareAlike License ° Terms of Use ° Privacy Policy</span></p>
+</div>
